@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mogger University</title>
+    <style>
+      img {
+        position: absolute;
+        width: 137.28px;
+        height: 124.75px;
+        left: 24px;
+        top: 13px;
+      }
+
+      .topbox {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 1280px;
+        height: 150px;
+        left: 639px;
+        top: 0px;
+
+        border-width: 0px 0px 1px 1px;
+        border-style: solid;
+        border-color: #480002;
+      }
+
+      .header {
+        position: absolute;
+        width: 279px;
+        height: 135px;
+        left: 197px;
+        top: -25px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 64px;
+        color: white;
+        font-family: "Old English Text MT", "Blackletter", cursive;
+
+        text-align: center;
+        line-height: 1.2;
+
+        color: #ffffff;
+      }
+
+      .box {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 703px;
+        top: 278px;
+      }
+
+      .borderleft {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 640px;
+        height: 1080px;
+        left: 0px;
+        top: 0px;
+        display: block;
+        background: none;
+        opacity: 1;
+
+        background: #000000;
+        border-right: 1px solid #480002;
+      }
+      .dark {
+        position: absolute;
+        width: 170px;
+        height: 96px;
+        left: 150px;
+        top: 20px;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 96px;
+
+        color: #000000;
+
+        -webkit-text-stroke: 2px #e61919;
+      }
+
+      .triad {
+        position: absolute;
+        width: 202px;
+        height: 96px;
+        left: 320px;
+        top: 60px;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 96px;
+
+        color: #ffffff;
+        -webkit-text-stroke: 2px #000000;
+      }
+
+      .borderleft img {
+        position: absolute;
+        width: 640px;
+        height: 935px;
+        left: 0px;
+        top: 175px;
+        opacity: 100;
+        transition: opacity 0.3s;
+      }
+
+      .ascend {
+        position: absolute;
+        width: 425px;
+        height: 39px;
+        left: 750px;
+        top: 25px;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+
+        color: #ffffff;
+      }
+
+      .student {
+        position: absolute;
+        width: 315px;
+        height: 40px;
+        left: 680px;
+        top: 150px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: bold;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 40px;
+
+        color: #9b1717;
+      }
+
+      .schoolyear {
+        position: absolute;
+        width: 338px;
+        height: 36px;
+        left: 694px;
+        top: 229px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .studenttype {
+        position: absolute;
+        width: 174px;
+        height: 36px;
+        left: 1095px;
+        top: 229px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .yearlvl {
+        position: absolute;
+        width: 138px;
+        height: 36px;
+        left: 1496px;
+        top: 229px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .line {
+        position: absolute;
+        width: 1280px;
+        height: 1px;
+        left: 660px;
+        top: 370px;
+
+        background: #686363;
+      }
+
+      .personal {
+        position: absolute;
+        width: 328px;
+        height: 40px;
+        left: 680px;
+        top: 370px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 40px;
+
+        color: #9b1717;
+      }
+
+      .first {
+        position: absolute;
+        width: 148px;
+        height: 36px;
+        left: 694px;
+        top: 450px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .last {
+        position: absolute;
+        width: 148px;
+        height: 36px;
+        left: 1095px;
+        top: 450px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .middle {
+        position: absolute;
+        width: 163px;
+        height: 36px;
+        left: 1496px;
+        top: 450px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .email {
+        position: absolute;
+        width: 191px;
+        height: 36px;
+        left: 694px;
+        top: 550px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .phone {
+        position: absolute;
+        width: 203px;
+        height: 36px;
+        left: 1095px;
+        top: 550px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .nationality {
+        position: absolute;
+        width: 151px;
+        height: 36px;
+        left: 1496px;
+        top: 550px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .address {
+        position: absolute;
+        width: 105px;
+        height: 36px;
+        left: 694px;
+        top: 651px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .birthday {
+        position: absolute;
+        width: 165px;
+        height: 36px;
+        left: 1095px;
+        top: 651px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .gender {
+        position: absolute;
+        width: 95px;
+        height: 36px;
+        left: 1496px;
+        top: 651px;
+        white-space: nowrap;
+
+        font-family: "Old English Text MT", "Blackletter", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+
+        color: #504545;
+      }
+
+      .schoolyearinput {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 703px;
+        top: 315px;
+      }
+
+      .studenttypeinput {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 1100px;
+        top: 315px;
+      }
+
+      .yearlvlinput {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 1506px;
+        top: 315px;
+      }
+
+      .firstinput {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 710px;
+        top: 532px;
+      }
+
+      .lastinput {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 1110px;
+        top: 532px;
+      }
+
+      .middleinput {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 1508px;
+        top: 532px;
+      }
+
+      .emailinput {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 708px;
+        top: 632px;
+      }
+
+      .phoneinput {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 1112px;
+        top: 632px;
+      }
+
+      .nationalityinput {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 1507px;
+        top: 632px;
+      }
+
+      .addressinput {
+        position: absolute;
+        width: 518px;
+        height: 35px;
+        left: 704px;
+        top: 730px;
+      }
+
+      .birthdayinput {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 1112px;
+        top: 730px;
+      }
+
+      .genderinput {
+        position: absolute;
+        max-width: 150px;
+        height: auto;
+        left: 1507px;
+        top: 730px;
+      }
+
+      .buttonton {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: bold;
+        font-size: 35px;
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        left: 1770px;
+        top: 882px;
+
+        background: #474545;
+        border: 1px solid #ffffff;
+        border-radius: 15px;
+      }
+
+      .clearbutton {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: bold;
+        font-size: 35px;
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        left: 1579px;
+        top: 882px;
+
+        background: #474545;
+        border: 1px solid #ffffff;
+        border-radius: 15px;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="date"] {
+        width: 300px; /* wider box */
+        height: 30px; /* taller box */
+        padding: 10px 15px; /* inner spacing (buffer) */
+        font-size: 25px; /* larger text */
+        border-radius: 8px; /* smoother edges */
+        border: 1px solid #ccc;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <div class="background"></div>
+  <div class="borderleft">
+    <p class="dark">Dark</p>
+    <p class="triad">Triad</p>
+    <img src="C:\Users\Prince\Downloads\light.png" />
+  </div>
+
+  <body style="background-color: black">
+    <div class="topbox">
+      <img src="C:\Users\Prince\Downloads\moggerstyle.png" />
+      <p class="header">Mogger&nbsp;&nbsp;University</p>
+      <p class="ascend">Ascend for a better life</p>
+    </div>
+    <div>
+      <p class="student">Student Information</p>
+      <p class="studenttype">Student Type</p>
+      <p class="schoolyear">School Year</p>
+      <p class="yearlvl">Year Level</p>
+      <p class="line">________________________________</p>
+    </div>
+    <div>
+      <p class="personal">Personal Information</p>
+      <p class="first">First name</p>
+      <p class="last">Last name</p>
+      <p class="middle">Middle name</p>
+      <p class="email">Email Address</p>
+      <p class="phone">Phone number</p>
+      <p class="nationality">Nationality</p>
+      <p class="address">Address</p>
+      <p class="birthday">Date of birth</p>
+      <p class="gender">Gender</p>
+    </div>
+    <section>
+      <form id="recordform">
+        <label class="schoolyearinput">
+          <input type="number" id="schoolyear" placeholder="SY" /> </label
+        ><br />
+        <label class="studenttypeinput">
+          <input
+            type="text"
+            id="studenttype"
+            placeholder="Studenttype"
+          /> </label
+        ><br />
+        <label class="yearlvlinput">
+          <input type="text" id="yearlevel" placeholder="Yr" /> </label
+        ><br />
+        <label class="firstinput">
+          <input type="text" id="firstname" placeholder="First name" /> </label
+        ><br />
+        <label class="lastinput">
+          <input type="text" id="lastname" placeholder="Last name" /> </label
+        ><br />
+        <label class="middleinput">
+          <input
+            type="text"
+            id="middlename"
+            placeholder="Middle name"
+          /> </label
+        ><br />
+        <label class="emailinput">
+          <input
+            type="text"
+            id="emailaddress"
+            placeholder="gayru31@yahoo.com"
+          /> </label
+        ><br />
+        <label class="phoneinput">
+          <input type="number" id="phonenumber" placeholder="09" /> </label
+        ><br />
+        <label class="nationalityinput">
+          <input
+            type="text"
+            id="nationality"
+            placeholder="Nationality"
+          /> </label
+        ><br />
+        <label class="addressinput">
+          <input type="text" id="address" placeholder="Adress" /> </label
+        ><br />
+        <label class="birthdayinput">
+          <input type="date" id="dateofbirth" placeholder="MM/DD/YR" /> </label
+        ><br />
+        <label class="genderinput">
+          <input type="text" id="gender" placeholder="Male/Female" /> </label
+        ><br />
+
+        <button class="buttonton" type="button" onclick="saverecord()">
+          Save
+        </button>
+        <button class="clearbutton" type="button" onclick="clearrecord()">
+          Clear
+        </button>
+      </form>
+    </section>
+
+    <script>
+      const DB_KEY = "student_db_v1";
+
+      const seedData = [
+        {
+          schoolyear: "2025-2026",
+          studenttype: "chop",
+          yearlevel: "1st",
+          firstname: "gayru",
+          lastname: "matal",
+          middlename: "gayryl",
+          email: "gayru31@gmail.com",
+          phonenumber: "0913442536",
+          nationality: "niggerman",
+          address: "124gayrustreet taytay rizal",
+          dateofbirth: "08/16/2001",
+          gender: "bisexual",
+        },
+      ];
+
+      let db = [];
+
+      function loadDB() {
+        const raw = localStorage.getItem(DB_KEY);
+        if (raw) {
+          db = JSON.parse(raw);
+        } else {
+          db = seedData; // optional starting data
+          saveDB();
+        }
+      }
+
+      function saveDB() {
+        localStorage.setItem(DB_KEY, JSON.stringify(db));
+      }
+
+      function saverecord() {
+        const schoolyear = document.getElementById("schoolyear").value;
+
+        const studenttype = document.getElementById("studenttype").value;
+
+        const yearlevel = document.getElementById("yearlevel").value;
+
+        const firstname = document.getElementById("firstname").value;
+
+        const lastname = document.getElementById("lastname").value;
+
+        const middlename = document.getElementById("middlename").value;
+
+        const email = document.getElementById("emailaddress").value;
+
+        const phonenumber = document.getElementById("phonenumber").value;
+
+        const nationality = document.getElementById("nationality").value;
+
+        const address = document.getElementById("address").value;
+
+        const dateofbirth = document.getElementById("dateofbirth").value;
+
+        const gender = document.getElementById("gender").value;
+
+        const newrecord = {
+          schoolyear,
+          studenttype,
+          yearlevel,
+          firstname,
+          lastname,
+          middlename,
+          email,
+          phonenumber,
+          nationality,
+          address,
+          dateofbirth,
+          gender,
+        };
+
+        db.push(newrecord);
+        saveDB();
+        console.log("Record saved:", newrecord);
+        document.getElementById("recordform").reset();
+      }
+      loadDB();
+
+      function clearrecord() {
+        document.getElementById("recordform").reset();
+      }
+      loadDB();
+    </script>
+  </body>
+</html>
